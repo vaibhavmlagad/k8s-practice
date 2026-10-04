@@ -1,0 +1,9 @@
+# Ignore all certificate files
+*.cert
+*.crt
+*.pem
+
+# Ignore all private key files
+*.key
+*.keys
+*.pub
