@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: weather-app-configmap
+data:
+  # property-like keys; each key maps to a simple value
+  PG_USERNAME: "vaibhavlagad"
+  PG_PASSWORD: "lagad123"
+  PG_DATABASE: "weatherdb"
+  PG_HOST: "postgres-service.local"
+
+  # file-like keys
+  application.properties: |
+    enemy.types=aliens,monsters
+    player.maximum-lives=8

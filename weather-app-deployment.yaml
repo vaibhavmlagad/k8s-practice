@@ -17,5 +17,24 @@ spec:
       containers:
       - name: weather-app
         image: vaibhavlagad/weather-app:1.0.1
+        volumeMounts:
+        - name: config-volume
+          mountPath: /opt/weather-app/config
+        - name: metadb-secret-volume
+          mountPath: /opt/weather-app/secret
         ports:
         - containerPort: 8080
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+      volumes:
+      - name: config-volume
+        configMap:
+          name: weather-app-configmap
+      - name: metadb-secret-volume
+        secret:
+          secretName: metadb-secret
