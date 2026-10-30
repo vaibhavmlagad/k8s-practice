@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - vaibhavlagad.local.com
+    - vaibhavlagad.dev
     secretName: tls-secret-local
   rules:
-  - host: vaibhavlagad.local.com
+  - host: vaibhavlagad.dev
     http:
       paths:
       - path: /

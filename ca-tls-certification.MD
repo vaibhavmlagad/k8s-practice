@@ -106,7 +106,7 @@ You need to add a routing mapping on your main computer (not inside Minikube).
    ```
    3. Press Ctrl + O then Enter to save, and Ctrl + X to exit.
 * On Windows (Administrator):
-1. Open Notepad as an Administrator.
+   1. Open Notepad as an Administrator.
    2. Open C:\Windows\System32\drivers\etc\hosts.
    3. Add the same line to the bottom: 192.168.49.2 vaibhavlagad.local.com and save.
 
